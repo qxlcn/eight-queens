@@ -16,7 +16,7 @@ void print() {
 	cout << endl;
 }
 
-int available(int x, int y) {
+bool available(int x, int y) {
 	for (int i = 1; i < 9; i++)
 		if (ans[i] != 0)
 			if (x == ans[i]/10 || x+y == ans[i]/10+ans[i]%10 || x-y == ans[i]/10-ans[i]%10)
@@ -38,5 +38,5 @@ void search(int y) {
 int main() {
 	search(1);
 	cout << "Total: " << tot <<endl;
-    return 0;
+	return 0;
 }
